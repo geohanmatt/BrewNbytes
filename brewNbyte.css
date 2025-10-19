@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: #dfd5d5d6;
+}
+
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+  background-image: url('images.jpeg');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  width: 100dvw;
+}
+
+body {
+  width: 100%;
+}
+
+.page {
+  scroll-snap-align: start;
+}
+
+.one { height: 90vh !important;}
+.two {
+  background: rgba(166,166,166,0.325); 
+  backdrop-filter: blur(3px);
+}
+.three {
+  background: rgba(166,166,166,0.502); 
+  backdrop-filter: blur(5px);
+  height: 100vh;
+}
+.four { 
+  background: rgba(145,145,145,0.72); 
+  backdrop-filter: blur(8px);
+  height: 100vh;
+}
+
+#header {
+  animation: slide 10s linear infinite;
+  color: rgba(168,132,88,0.9);
+  text-shadow: white 1px 1px 2px;
+}
+
+#header-cont {
+  overflow-x: hidden;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-50vw);
+  }
+  100% {
+    transform: translateX(100vw);
+  }
+}
+
+#intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20vh;
+  padding-top: 20dvh;
+  flex-direction: column;
+}
+
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: rgba(56,56,56,0.31);
+  backdrop-filter: blur(10px);
+  border: double white 3px;
+  border-radius: 25px;
+  margin-bottom: 1vh;
+  margin-bottom: 1dvh;
+  padding: 5vw;
+  padding: 5dvw;
+}
+
+
+.title {
+  color: rgba(168,132,88,0.8);
+  font-size: 3rem;
+  text-shadow: white 1px 1px 2px;
+  font-family: "Dancing Script", cursive;
+}
+
+.cont  {
+  margin-bottom: 1vh;
+  margin-bottom: 1dvh;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: rgba(56,56,56,0.31);
+  backdrop-filter: blur(10px);
+  border: double white 3px;
+  border-radius: 25px;
+  padding: 5vw;
+  padding: 5dvw;
+  transition: all 0.3s;
+}
+
+nav a {
+  transition: all 0.3s;
+  text-decoration: none;
+}
+
+nav a:hover {
+  transform: translateY(-5px);
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+hr {
+  margin-bottom: 8.5vh;
+  margin-bottom: 8.5dvh;
+}
+
+select {
+  color: black;
+}
+
+button a {
+  color: black;
+}
+
+.submitBtn {
+  color: black;
+¹}
+
+img {
+  width: 120px;
+  height: auto;
+  object-fit: contain;
+}s
+
+.cont h2 {
+  margin: 10px;
+}
+
+ul {
+  margin: 10px;
+}
+
+.three p {
+  margin-bottom: 10px;
+}
+
+.submitBtn {
+  transform: scale(1.5);
+  margin-top: 15px;
+  background: pink;
+  border: solid white;
+  border-radius: 25px;
+}
